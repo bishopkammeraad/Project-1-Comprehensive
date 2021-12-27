@@ -1,0 +1,93 @@
+#take inputs
+
+customer_name = input("What is the customers name? : ")
+#print('REWARDS FOR', customer_name)
+#print()
+drinks = int(input("How many drinks purchased this month? : "))
+chips = int(input("Number of bags of chips purchased this month? : "))
+
+#print(' Monthly Counts: ')
+#print('     Drinks: ', drinks)
+#print('     Chips: ', chips)
+#print()
+gas = float(input("Dollars of gasoline purchased this month? : "))
+food = float(input("Dollars of merchandise purchased this month? : "))
+points = (int(food) * 10) + (int(gas / 2)*5)
+totalspent = float(gas + food) 
+#giftcards = int(totalspent / 5000) 
+#pointremainder = totalspent % 5000
+giftcards = int(points // 5000)
+pointremainder = int(points % 5000)
+#print(' Monthly Purchases: ')
+#print('     Gasoline: ', gas)
+#print('     Food/Merchandise: ', food)
+#print('     Points Earned:', points)
+#print()
+
+#print(' Monthly Rewards: ') 
+#free_drinks = drinks // 5
+#extra = drinks % 5
+
+#if free_drinks == 1 :
+#    print(free_drinks, 'free drink,',extra,'extra')
+#else :
+#    print(free_drinks, 'free drinks,',extra,'extra')
+   
+#free_chips = chips // 7
+#extra = chips % 7
+
+#if free_chips == 1 :
+#    print(  free_chips, 'free chip,',extra,'extra')
+#else :
+#    print(  free_chips, 'free chips,',extra,'carried over')
+
+
+print('REWARDS FOR', customer_name)
+print()
+print('','Monthly Counts:')
+print(' ','Drinks:', drinks)
+print(' ','Chips:', chips)
+print()
+print('','Monthly Purchases:')
+print(' ','Gasoline: $', gas)
+print(' ','Food/Merchandise: $', food)
+print(' ','Points Earned:', points)
+print()
+print('','Monthly Rewards:') 
+free_drinks = drinks // 5
+extra = drinks % 5
+if free_drinks == 1 :
+    print(' ', free_drinks, 'free drink,',extra,'extra')
+else :
+    print(' ', free_drinks, 'free drinks,',extra,'extra')
+free_chips = chips // 7
+extra = chips % 7
+if free_chips == 1 :
+    print(' ', free_chips, 'free bag of chips,',extra,'carried over')
+else :
+    print(' ', free_chips, 'free bags of chips,',extra,'carried over')
+    
+if giftcards == 1 :
+    print(' ', giftcards, '$25 gift card,', pointremainder , 'points carried over')
+else : 
+     print(' ', giftcards, '$25 gift cards,', pointremainder , 'points carried over')
+
+#drinks = int(input("How many drinks purchased this month? : "))
+#chips = int(input("Number of bags of chips purchased this month? : "))
+#gas = float(input("Dollars of gasoline purchased this month? : "))
+#food = float(input("Dollars of merchandise purchased this month? : "))
+
+
+#print('CUSTOMER' , customer_name , type(customer_name))
+#print("DRINKS" , drinks , type(drinks))
+#print("CHIPS" , chips , type(chips))
+#print("GAS" , gas , type(gas))
+#print("FOOD" , food , type(food))
+
+#free_drinks = drinks // 5
+#extra = drinks % 5
+
+#if free_drinks == 1 :
+#    print(free_drinks, 'free drink,',extra,'extra')
+#else :
+#    print(free_drinks, 'free drinks,',extra,'extra')
